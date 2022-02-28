@@ -8,55 +8,84 @@
 </head>
 <body>
     <h1>Part 2 of HTML Components</h1>
-    <h2>Unordered list</h2>
+
+
+    <h2>Links to other pages</h2>
     <ul>
-        <li>Phone</li>
-        <li>Tablet</li>
-        <li>Laptop</li>
+        <li><a href="index.html">Home Page</a></li>
+        <li><a href="part1.html">HTML Components - Part 1</a></li>
     </ul>
-    <h2>Ordered list</h2>
+
+
+    <h2>There are three main types of dragons</h2>
     <ol>
-        <li>Gym</li>
-        <li>Web Development</li>
-        <li>Canadian History</li>
-        <li>Pre-Calculus</li>
+        <dl>
+            <dt>
+                <li>Western Dragon</li>
+            </dt>
+            <dd>These dragons have 4 legs and a set of wings, breath fire and were traditional in European folklore,
+                hence the name 'Western Dragon'. These dragons were often seen as evil or something to be feared as
+                they are often depicted terrorizing people.</dd>
+            <dt>
+                <li>Chinese/oriental Dragon</li>
+            </dt>
+            <dd>These dragons have 4 legs but lack any wings. They are more serpentine than there european counterparts,
+                and were said to control the elements and weather. Instead of being feared, they were often revered and
+                were seen as being guardians and protectors of heaven and were found in mythology through East Asia</dd>
+            <dt>
+                <li>Wyvern</li>
+            </dt>
+            <dd>These dragons have 2 legs and a set of wings, and were seen to be smaller and weaker than Western dragons.
+                These dragons were often poisonous and didn't have fire.</dd>
+
+        </dl>
     </ol>
-    <h2>Description list</h2>
-    <dl>
-        <dt>Headphones</dt>
-        <dd>These go over your head</dd>
-        <dt>Earbuds</dt>
-        <dd>These go in your ears</dd>
-    </dl>
-    <h2>Table</h2>
+
+
+    <h2>Traits</h2>
     <table>
         <tr>
-            <th>Electronics Price</th>
+            <th>Dragon Type</th>
+            <th>Wings</th>
+            <th>Legs</th>
+            <th>Other Abilities</th>
         </tr>
         <tr>
-            <td>Phone</td>
-            <td>$800</td>
+            <td>Western Dragon</td>
+            <td>Two wings</td>
+            <td>Four legs</td>
+            <td>Breaths fire</td>
         </tr>
         <tr>
-            <td>Tablet</td>
-            <td>$1000</td>
+            <td>Oriental Dragon</td>
+            <td>No wings</td>
+            <td>Four legs</td>
+            <td>Controls weather/elements</td>
         </tr>
         <tr>
-            <td>Laptop</td>
-            <td>$1500</td>
+            <td>Wyvern</td>
+            <td>Two wings</td>
+            <td>Two legs</td>
+            <td>Poisonous bite/tail</td>
         </tr>
     </table>
+
     <h2>Form</h2>
-    <h3>Select what devices you own!</h3>
+    <h3>Select what dragons you like!</h3>
     <form>
-        <label for="phone">Phone:</label>
-        <input type="checkbox" id="phone" name="phone"/><br/>
-        <label for="tablet">Tablet:</label>
-        <input type="checkbox" id="tablet" name="tablet"/><br/>
-        <label for="laptop">Laptop:</label>
-        <input type="checkbox" id="laptop" name="laptop"/>
+        <label for="wstdrg">Western Dragon:</label>
+        <input type="checkbox" id="wstdrg" name="wstdrg"/><br/>
+        <label for="oridrg">Oriental Dragon:</label>
+        <input type="checkbox" id="oridrg" name="oridrg"/><br/>
+        <label for="wyvn">Wyvern:</label>
+        <input type="checkbox" id="wyvn" name="wyvn"/>
     </form>
     <h2>IFrame to homepage</h2>
-    <iframe src="index.html" title="Division Portal" height="400px" width="600px"></iframe>
+    <iframe
+    src="index.html"
+    title="Homepage of website"
+    height="400px" width="600px"
+    ></iframe>
+    <h6>&#169; Leanna Szypowski</h6>
 </body>
 </html>
