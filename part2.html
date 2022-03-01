@@ -1,91 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="mystyle.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Components - Part 2</title>
+
 </head>
 <body>
-    <h1>Part 2 of HTML Components</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home Page</a></li>
+            <li><a href="part1.html">HTML Components - Part 1</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Part 2 of HTML Components</h1>
+    </main>
 
 
-    <h2>Links to other pages</h2>
-    <ul>
-        <li><a href="index.html">Home Page</a></li>
-        <li><a href="part1.html">HTML Components - Part 1</a></li>
-    </ul>
+    <section>
+        <header>
+            <h2>There are three main types of dragons</h2>
+        </header>
+        <ol>
+            <dl>
+                <dt>
+                    <li>Western Dragon</li>
+                </dt>
+                <details>
+                    <dd>These dragons have 4 legs and a set of wings, breath fire and were traditional in European folklore,
+                        hence the name 'Western Dragon'. These dragons were often seen as evil or something to be feared as
+                        they are often depicted terrorizing people.
+                    </dd>
+                </details>
+                <dt>
+                    <li>Chinese/oriental Dragon</li>
+                </dt>
+                <details>
+                    <dd>These dragons have 4 legs but lack any wings. They are more serpentine than there european counterparts,
+                        and were said to control the elements and weather. Instead of being feared, they were often revered and
+                        were seen as being guardians and protectors of heaven and were found in mythology through East Asia
+                    </dd>
+                </details>
+                <dt>
+                    <li>Wyvern</li>
+                </dt>
+                <details>
+                    <dd>These dragons have 2 legs and a set of wings, and were seen to be smaller and weaker than Western dragons.
+                        These dragons were often poisonous and didn't have fire.
+                    </dd>
+                </details>
+            </dl>
+        </ol>
+    </section>
 
 
-    <h2>There are three main types of dragons</h2>
-    <ol>
-        <dl>
-            <dt>
-                <li>Western Dragon</li>
-            </dt>
-            <dd>These dragons have 4 legs and a set of wings, breath fire and were traditional in European folklore,
-                hence the name 'Western Dragon'. These dragons were often seen as evil or something to be feared as
-                they are often depicted terrorizing people.</dd>
-            <dt>
-                <li>Chinese/oriental Dragon</li>
-            </dt>
-            <dd>These dragons have 4 legs but lack any wings. They are more serpentine than there european counterparts,
-                and were said to control the elements and weather. Instead of being feared, they were often revered and
-                were seen as being guardians and protectors of heaven and were found in mythology through East Asia</dd>
-            <dt>
-                <li>Wyvern</li>
-            </dt>
-            <dd>These dragons have 2 legs and a set of wings, and were seen to be smaller and weaker than Western dragons.
-                These dragons were often poisonous and didn't have fire.</dd>
+    <section>
+        <header>
+            <h2>Traits</h2><br/>
+        </header>
+        <table>
+            <tr>
+                <th>Dragon Type</th>
+                <th>Wings</th>
+                <th>Legs</th>
+                <th>Other Abilities</th>
+            </tr>
+            <tr>
+                <td>Western Dragon</td>
+                <td>Two wings</td>
+                <td>Four legs</td>
+                <td>Breaths fire</td>
+            </tr>
+            <tr>
+                <td>Oriental Dragon</td>
+                <td>No wings</td>
+                <td>Four legs</td>
+                <td>Controls weather/elements</td>
+            </tr>
+            <tr>
+                <td>Wyvern</td>
+                <td>Two wings</td>
+                <td>Two legs</td>
+                <td>Poisonous bite/tail</td>
+            </tr>
+        </table>
+    </section>
 
-        </dl>
-    </ol>
+
+    <section>
+        <header>
+            <h2>Select what dragons you like!</h2><br/>
+        </header>
+        <form>
+            <label for="wstdrg">Western Dragon:</label>
+            <input type="checkbox" id="wstdrg" name="wstdrg"/>
+            <label for="oridrg">Oriental Dragon:</label>
+            <input type="checkbox" id="oridrg" name="oridrg"/>
+            <label for="wyvn">Wyvern:</label>
+            <input type="checkbox" id="wyvn" name="wyvn"/>
+        </form>
+    </section>
 
 
-    <h2>Traits</h2>
-    <table>
-        <tr>
-            <th>Dragon Type</th>
-            <th>Wings</th>
-            <th>Legs</th>
-            <th>Other Abilities</th>
-        </tr>
-        <tr>
-            <td>Western Dragon</td>
-            <td>Two wings</td>
-            <td>Four legs</td>
-            <td>Breaths fire</td>
-        </tr>
-        <tr>
-            <td>Oriental Dragon</td>
-            <td>No wings</td>
-            <td>Four legs</td>
-            <td>Controls weather/elements</td>
-        </tr>
-        <tr>
-            <td>Wyvern</td>
-            <td>Two wings</td>
-            <td>Two legs</td>
-            <td>Poisonous bite/tail</td>
-        </tr>
-    </table>
+    <section>
+        <header>
+            <h2>IFrame to homepage</h2>
+        </header>
+        <iframe
+        src="index.html"
+        title="Homepage of website"
+        height="400px" width="600px"
+        ></iframe>
+    </section>
 
-    <h2>Form</h2>
-    <h3>Select what dragons you like!</h3>
-    <form>
-        <label for="wstdrg">Western Dragon:</label>
-        <input type="checkbox" id="wstdrg" name="wstdrg"/><br/>
-        <label for="oridrg">Oriental Dragon:</label>
-        <input type="checkbox" id="oridrg" name="oridrg"/><br/>
-        <label for="wyvn">Wyvern:</label>
-        <input type="checkbox" id="wyvn" name="wyvn"/>
-    </form>
-    <h2>IFrame to homepage</h2>
-    <iframe
-    src="index.html"
-    title="Homepage of website"
-    height="400px" width="600px"
-    ></iframe>
-    <h6>&#169; Leanna Szypowski</h6>
+
+    <footer>
+        <h6>&#169; Leanna Szypowski</h6>
+    </footer>
 </body>
 </html>
