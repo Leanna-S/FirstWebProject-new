@@ -1,15 +1,19 @@
 
 body {
-    background-color: whitesmoke;
+    background-color: white;
   }
 main {
     margin: 20px;
     padding: 30px;
     text-align: center;
     text-decoration-line: underline;
-    background-color: lightskyblue;
-    border-style: dashed;
+    background-color: darkcyan;
+    border-style: solid;
+    border-color: black;
+    outline-color: darkslategrey;
+    color: white;
     outline-style: solid;
+    outline-width: 1px;
     outline-offset: 10px;
     border-radius: 10px;
 
@@ -18,11 +22,13 @@ header {
     text-align: center;
     text-decoration-line: underline;
     padding: 15px;
-    background-color: lightskyblue;
+    background-color: darkslategray;
     width: 40%;
     margin: auto;
-    border-style: dashed;
     border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+    color: white;
 }
 p {
     text-indent: 10px;
@@ -30,7 +36,11 @@ p {
 section {
     margin: 20px;
     padding: 5px;
+    background-color: lightgray;
     border-style: solid;
+    border-color: darkslategray;
+    border-width: 1px;
+    border-radius: 10px;
 }
 table {
     width: 100%;
@@ -38,9 +48,15 @@ table {
 }
 td, th {
     border-style: solid;
+    border-color: darkslategray;
 }
 th {
-    background-color: lightskyblue;
+    background-color: darkcyan;
+    border-style: solid;
+    border-color: black;
+}
+td {
+    background-color: white;
 }
 ul {
     list-style-type: none;
@@ -75,4 +91,11 @@ footer {
 }
 label {
     width: 100%;
+}
+details{
+    background-color: white;
+    padding: 10px;
+    border-style: solid;
+    border-color: darkslategray;
+    border-radius: 10px;
 }
